@@ -1,4 +1,11 @@
-
+@media (max-width: 1920px) and (min-width: 768px) {
+	html {
+	  zoom: 110%;
+	}
+	@-ms-viewport {
+	  width: 1920px;
+	}
+  }
 /* 顶部栏设置 */
 .top {
 	height: 33px;
