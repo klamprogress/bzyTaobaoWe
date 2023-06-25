@@ -1,0 +1,310 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font: 12px/1.5 tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+    color: #3c3c3c;
+    background-color: #f4f4f4;
+}
+
+.top {
+    width: 1600px;
+    height: 100px;
+}
+
+.top-top {
+    padding: 0px 100px 0px;
+    height: 40px;
+    background-color: #fefbfb;
+}
+
+.top-bottom {
+    padding: 0px 100px 0px;
+    height: 60px;
+    background-color: #f40;
+
+}
+
+.middle-left {
+    width: 140px;
+    height: 362px;
+    padding: 25px 0px 0px 100px;
+    float: left;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+/* li{
+    float: left;
+} */
+.li-left {
+    float: left;
+    padding: 10px 10px 0px;
+}
+
+.li-right {
+    float: right;
+    padding: 10px 10px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #3c3c3c;
+}
+
+#mytb {
+    float: left;
+    height: 60px;
+}
+
+.top-bottom-01 {
+    color: #f4f4f4;
+    font-size: 10px;
+    float: left;
+    margin-left: 20px;
+    padding: 20px 50px;
+}
+
+input {
+    width: 200px;
+    height: 25px;
+    float: right;
+    margin-top: 20px;
+}
+
+#btn1 {
+    width: 50px;
+    height: 30px;
+}
+
+.top-bottom-02 {
+    float: right;
+}
+
+.boys {
+    display: none;
+}
+
+.boys>li {
+    background-color: #d2a2a2;
+
+}
+
+/* 鼠标悬停时候会显示 */
+#menu>li:hover .boys {
+    display: block;
+}
+
+.middle {
+    width: 1600px;
+    height: 800px;
+    /* border: 3px solid red; */
+}
+
+.middle-right {
+    width: 1300px;
+    height: 600px;
+    float: left;
+    /* border: 1px solid black; */
+    margin-top: 30px;
+}
+
+.middle-right-left {
+    float: left;
+    width: 900px;
+
+}
+
+.middle-right-left-top {
+    width: 900px;
+    height: 160px;
+    border: 1px solid gray;
+}
+
+.middle-right-left-top-top {
+    height: 60px;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+
+#m1>li {
+    float: right;
+    padding: 10px;
+    padding-top: 20px;
+    margin-right: 10px;
+}
+
+img {
+    float: left;
+    vertical-align: middle;
+}
+
+#td01 {
+    font-size: 20px;
+    color: #f50;
+}
+
+.clear::after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+#ul02>li{
+    float: left;
+    padding: 30px;
+    margin-left: 10px;
+}
+
+.wuliu{
+    height: 20px;
+    margin-top: 10px;
+    padding-top: 25px;
+    border: #3c3c3c solid 2px;
+    margin-bottom: 10px;
+}
+.guess{
+    width: 900px;
+    height: 50px;
+    float: left;
+    background-color: skyblue;
+}
+.guess>h2{
+    float: left;
+    padding: 10px;
+}
+#huan{
+    width: 100px;
+    height: 30px;
+    float: right;
+    background-color: #fff;
+    margin: 10px;
+}
+.goods{
+    width: 900px;
+    height: 1200px;
+    border: 1px solid #e4eaee;
+    border-top: 0;
+    background-color: #f5f8fa;
+    padding: 26px 0 0;
+}
+
+.bottom{
+    margin-top: 700px;
+}
+
+.item {
+    width: 400px;
+    margin: 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    border-radius: 4px;
+  }
+  .item img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 4px 4px 0 0;
+  }
+  .item .info {
+    padding: 10px;
+  }
+  .item .title {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  .item .price {
+    margin: 0;
+    font-size: 14px;
+    color: #f40;
+  }
+  .item .buy-btn {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px 0 0 0;
+    background-color: #f40;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .item .buy-btn:hover {
+    background-color: #ff5733;
+  }
+  footer {
+    background-color: #f8f8f8;
+    padding: 30px 0;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .col-3 {
+    width: calc(25% - 20px);
+    margin: 0 10px;
+    padding-right: 30px;
+    box-sizing: border-box;
+  }
+  .col-3:last-child {
+    padding-right: 0;
+  }
+  .col-3 h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  .col-3 ul {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  .col-3 li {
+    margin-bottom: 10px;
+  }
+  .col-3 li a {
+    color: #666;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+  }
+  
+
+.data-box{
+    width: 300px;
+    height: 400px;
+    float: right;
+}
+
+#data{
+    width: 300px;
+    height: 300px;
+    float: right;
+}
+
+  
+
+
+
+
+
