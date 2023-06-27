@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .bc {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background: url(https://img.alicdn.com/tfs/TB1C.3nefb2gK0jSZK9XXaEgFXa-2880-2000.jpg);
+            background-size: cover;
+        }
+
+        .box {
+            width: 800px;
+            height: 600px;
+            margin-left: 20%;
+            margin-top: 10%;
+            background-color: white;
+            position: relative;
+            top: -40px;
+            left: 100px;
+        }
+
+        #fanhui {
+            width: 50px;
+            height: 30px;
+            background-color: orange;
+            margin-top: 3%;
+            border-radius: 30px;
+            float: left;
+            top: 50%;
+        }
+
+        .top_right {
+            float: left;
+            margin-top: 1%;
+            margin-left: 2%;
+        }
+
+        .top_right>img {
+            width: 60px;
+            height: 60px;
+        }
+
+        .wenzi {
+            float: left;
+            margin-top: 2.5%;
+
+        }
+
+        #p1 {
+            display: flex;
+            font-size: 18px;
+        }
+
+        #p2 {
+            font-size: 10px;
+            color: #999;
+        }
+
+        .c1 {
+            background: #999;
+            border-radius: 6px;
+            display: inline-block;
+            font-size: 12Px;
+            padding: 6Px 9Px;
+            text-align: left;
+            margin-left: 40%;
+        }
+
+        .c2 {
+            background: #999;
+            border: 1px solid black;
+            border-radius: 10px;
+            font-size: 18Px;
+            padding: 6Px 9Px;
+            text-align: left;
+            width: fit-content;
+            width: -webkit-fit-content;
+            width: -moz-fit-content;
+            /* 自适应框 */
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .c3 {
+            background: #999;
+            border: 1px solid black;
+            border-radius: 10px;
+            font-size: 18Px;
+            padding: 6Px 9Px;
+            text-align: left;
+            width: fit-content;
+            width: -webkit-fit-content;
+            width: -moz-fit-content;
+            margin-bottom: 30px;
+        }
+
+        .bottom>#but2 {
+            width: 50px;
+            height: 25px;
+            background-color: orange;
+            border-radius: 30px;
+            float: left;
+        }
+
+        .bottom>#a2 {
+            width: 130px;
+            height: 25px;
+            background-color: paleturquoise;
+            border: 1px solid black;
+            border-radius: 30px;
+            float: left;
+            text-align: center;
+
+        }
+
+        .bottom>#but3 {
+            width: 50px;
+            height: 25px;
+            background-color: orange;
+            border-radius: 30px;
+            float: right;
+        }
+
+        .bb {
+            float: left;
+
+        }
+
+        .bb>button {
+            width: 32px;
+            height: 32px;
+            float: left;
+            margin-top: 12px;
+            margin-right: 5px;
+        }
+
+        .bb>button>img {
+            width: 32px;
+            height: 32px;
+
+
+        }
+
+        #but4 {
+            width: 50px;
+            height: 30px;
+            background-color: orange;
+            margin-top: 12px;
+            border-radius: 30px;
+            float: right;
+        }
+
+        .kuang {
+            margin-top: 3%;
+            border-radius: 5px;
+            height: 30px;
+            float: left;
+            margin-top: 12px;
+        }
+
+        .xiaoxi {
+
+            width: 800px;
+            height: 450px;
+            border: 1px solid black;
+            overflow: scroll;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function send() {//发送函数
+            var x = document.getElementById("xiao");
+            weit()//等待函数
+            //输入
+            var textid = document.getElementById("textid").value
+            var box_btn = document.createElement("div");
+            var nowtime = Clocknow();//获取时间点
+            var box_t = document.createTextNode(nowtime)
+            box_btn.style.height = '12px';
+            box_btn.style.width = '120px';
+            box_btn.style.fontSize = '3.1mm';
+            box_btn.style.color = '#999';
+            box_btn.style.fontFamily = '楷体';
+            box_btn.style.marginLeft = '68%';
+            box_btn.style.marginBottom = '10px';
+
+            var btn = document.createElement("li");
+
+            var t = document.createTextNode(textid);
+            btn.style.color = 'black';
+            btn.style.width = '200px';
+            //btn.style.width = '-webkit-fit-content';
+            //btn.style.width = '-moz-fit-content';
+            //btn.style.border = '1px solid black';
+            btn.style.marginLeft = '68%';
+            //btn.style.borderRadius = '5px';
+            btn.style.wordBreak = 'break-all';
+            btn.style.listStyleType = 'none';
+
+            btn.appendChild(t);
+            x.appendChild(btn);
+            box_btn.appendChild(box_t);
+            x.appendChild(box_btn);
+
+            var a = "没有客服"
+
+            window.setTimeout("huifu('" + a + "')", 500)//回复函数
+        }
+
+
+        function weit() {//等待函数
+            var body = document.body
+            var add = document.createElement("div")
+            // add.innerHTML = "<img src = '../img/day09/0.JPG'>"//可删
+            add.style.marginTop = '-80px'
+            add.style.marginLeft = '-60'
+            add.id = "test"
+            body.appendChild(add)
+        }
+
+        function che() {//
+            console.log("执行了")
+            var body = document.body
+            var cal = document.getElementById("test")
+            body.removeChild(cal)
+        }
+
+        function Clocknow() {//获取时间节点
+            var date = new Date();
+            var y = date.getFullYear();
+            var m = date.getMonth() + 1;
+            var d = date.getDate();
+            var ho = date.getHours();
+            var h = (Array(2).join(0) + ho).slice(-2);
+            var mi = date.getMinutes();
+            var min = (Array(2).join(0) + mi).slice(-2);
+            var sec = date.getSeconds();
+            var sectwo = (Array(2).join(0) + sec).slice(-2);
+            var time = y + "-" + m + "-" + d + "-" + h + ":" + min + ":" + sectwo;
+            console.log(time);
+            return time;
+
+        }
+
+        function huifu(huifutext) {
+            che()
+
+            var x = document.getElementById("xiao");
+
+            var box_set = document.createElement("div");
+            var nowtimeset = Clocknow();
+            var box_set_t = document.createTextNode(nowtimeset)
+
+            box_set.style.height = '12px';
+            box_set.style.width = '120px';
+            box_set.style.fontSize = '3.1mm';
+            box_set.style.color = '#999';
+            box_set.style.fontFamily = '楷体';
+            //box_set.style.marginLeft = '10%';
+            box_set.style.marginBottom = '10px';
+
+            var set = document.createElement("li");
+            var t = document.createTextNode(huifutext);
+            set.style.color = 'black';
+            set.style.borderRadius = '5px';
+            //set.style.marginLeft = '10%';
+            set.style.width = '200px';
+            //set.style.border = '1px solid black';
+            set.style.listStyleType = 'none'
+            set.appendChild(t);
+            x.appendChild(set);
+            box_set.appendChild(box_set_t);
+            x.appendChild(box_set);
+
+            x.scrollTop = x.scrollHeight//保持滚动条再底部
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="bc">
+        <div class="box">
+            <div class="top">
+                <div class="top_left">
+                    <input type="button" value="返回" id="fanhui" onclick="location.reload()">
+
+                </div>
+                <div class="top_right">
+                    <img src="https://gw.alicdn.com/imgextra/i4/O1CN016i66TT24lRwUecIk5_!!6000000007431-2-tps-164-164.png_80x80.jpg"
+                        alt="">
+
+                </div>
+                <div class="wenzi">
+                    <p id="p1">官方客服</p>
+                    <p id="p2">951****（好好）</p>
+                </div>
+            </div>
+
+            <div class="xiaoxi" id="xiao">
+                <div class="c1">
+                    <a href="">查看历史消息</a>
+                </div>
+                <div class="c2">
+                    <a href="">小蜜蜂来帮你</a>
+                </div>
+                <div class="c3">
+                    <a href="">待办</a>
+                </div>
+            </div>
+            <div class="bottom">
+                <input type="button" id="but2" value="其他">
+                <a href="" id="a2">咨询订单问题</a>
+                <input type="button" id="but3" value="其他">
+            </div>
+            <div class="bb">
+                <button id="sp" type="button">
+                    <img src="./img/pz.png" alt="" title="发送商品">
+                </button>
+                <button id="tp" type="button">
+                    <img src="./img/sp.png" alt="" title="图片">
+                </button>
+                <button id="zx" type="button">
+                    <img src="./img/zp.png" alt="" title="照相">
+                </button>
+                <button id="bq" type="button">
+                    <img src="./img/bq.png" alt="" title="表情">
+                </button>
+
+                <input class="kuang" type="text" style="width: 540px;" id="textid" placeholder="亲输入">
+                <button id="but4" onclick="send()" style="width: 90px;">发送</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
